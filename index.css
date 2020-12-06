@@ -1,0 +1,89 @@
+@import "reset.css";
+@font-face {
+  src: url("fonts/KyongKi_Light.ttf");
+  font-family: "font";
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: "font";
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form {
+  display: none;
+}
+
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-size: 24px;
+  margin: 10px 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.js-clock {
+  font-size: 32px;
+  margin: 5px 1%;
+}
+
+.js-form input {
+  padding: 5px 0px;
+  font-size: 14px;
+  margin: 10px 5px;
+}
+
+.js-form input::placeholder {
+  color: black;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px 10%;
+  width: 80%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+  margin: 1% 10px;
+  font-size: 24px;
+}
+
+.js-toDoForm {
+  margin: 10px 5px;
+  border: none;
+}
+
+.js-toDoForm input::placeholder {
+  color: black;
+}
+
+.js-toDoList {
+  margin: 4px 5px;
+}
+
+.js-toDoList li {
+  margin-top: 7px;
+}
